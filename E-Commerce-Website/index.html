@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- <link rel="stylesheet" href="/style.css"> -->
+        <title>E-COMMERCE WEBSITE BY EDYODA | CREATED BY PRIYANKA SHARMA</title>
+
+        <link rel="stylesheet" href="css/content.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/footer.css" />
+        <!-- header links -->
+        <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+        <link
+            href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="icon"
+            href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo"
+            type="image/gif"
+            sizes="16x16"
+        />
+        <!-- EXTERNAL LINKS -->
+        <link rel="stylesheet" href="css/header.css" />
+        <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+        <link
+            href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <header>
+            <section>
+                <!-- MAIN CONTAINER -->
+                <div id="container">
+                    <!-- SHOP NAME -->
+                    <div id="shopName">
+                        <a href="index.html"> <b>SHOP</b>name </a>
+                    </div>
+                    <!-- COLLCETIONS ON WEBSITE -->
+                    <div id="collection">
+                        <!-- <div id="clothing">
+                            <a href="collection1.html"> collection1 </a>
+                        </div>
+                        <div id="accessories">
+                            <a href="collection2.html"> collection2 </a>
+                        </div> -->
+                    </div>
+                    <!-- SEARCH SECTION -->
+                    <div id="search">
+                        <i class="fas fa-search search"></i>
+                        <input
+                            type="text"
+                            id="input"
+                            name="searchBox"
+                            placeholder="Search for collections"
+                        />
+                    </div>
+                    <!-- USER SECTION (CART AND USER ICON) -->
+                    <div id="user">
+                        <a href="cart.html">
+                            <i class="fas fa-shopping-cart addedToCart"
+                                ><div id="badge">0</div></i
+                            ></a
+                        >
+                        <a href="account.html">
+                            <i class="fas fa-user-circle userIcon"></i>
+                        </a>
+                        <!-- User Greeting -->
+                        <div id="userGreeting"></div>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <style>
+            body {
+                margin: 0;
+            }
+            #cover-photo {
+                margin: auto;
+                width: 90%;
+                text-align: center;
+                padding-top: 100px;
+                box-sizing: border-box;
+            }
+            #cover-photo img {
+                width: 100%;
+                height: 140%;
+                text-align: center;
+                align-content: center;
+            }
+            @media (max-width: 732px) {
+                #cover-photo img {
+                    height: 12em;
+                }
+            }
+            @media (max-width: 500px) {
+                #cover-photo img {
+                    height: 10em;
+                }
+            }
+        </style>
+        <section>
+            <div id="cover-photo">
+                <img src="img/cover.png" alt="image1" />
+            </div>
+        </section>
+
+        <!-- CONTENT SECTION -->
+        <div id="mainContainer">
+            <h1>clothing for men and women</h1>
+            <div id="containerClothing">
+                <!-- JS rendered code -->
+            </div>
+
+            <h1>accessories for men and women</h1>
+            <div id="containerAccessories">
+                <!-- JS rendered code -->
+            </div>
+        </div>
+
+        <footer>
+            <section>
+                <div id="credit">
+                    <a href=""> e-commerce-project |</a>
+
+                    <a href="#" target="_blank"> Ahmed </a>
+                </div>
+            </section>
+        </footer>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const currentUser = localStorage.getItem("currentUser");
+                if (currentUser) {
+                    document.getElementById(
+                        "userGreeting"
+                    ).innerText = `Hello, ${currentUser}`;
+                    document.getElementById("logoutButton").style.display =
+                        "block";
+                }
+            });
+        </script>
+    </body>
+
+    <!-- content JS -->
+    <script src="js/content.js"></script>
+</html>
